@@ -1,0 +1,5 @@
+services:
+    iiet.hide_forums.listener:
+        class: iiet\hide_forums\event\listener
+        tags:
+            - { name: event.listener }

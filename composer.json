@@ -1,0 +1,25 @@
+{
+   "name": "iiet/hide_forums",
+   "type": "phpbb-extension",
+   "description": "phpBB 3.1 extension to make use of hide forums script",
+   "homepage": "https://github.com/ukasiu/phpbb_ext_hide_forums",
+   "version": "0.0.1",
+   "license": "GPL-2.0",
+   "authors": [
+      {
+         "name": "Łukasz Gurdek",
+         "email": "github@ukasiu.pl",
+         "homepage": "https://github.com/ukasiu",
+         "role": "Developer"
+      }
+   ],
+   "require": {
+      "php": ">=5.3.3"
+   },
+   "extra": {
+      "display-name": "Hide Forums",
+      "soft-require": {
+         "phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
+      }
+   }
+}
