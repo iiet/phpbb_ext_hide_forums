@@ -12,13 +12,15 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 */
 class listener implements EventSubscriberInterface
 {
+  protected $template;
   /**
   * Constructor
   *
   * @param \phpbb\controller\helper    $helper        Controller helper object
   */
-  public function __construct()
+  public function __construct(\phpbb\template\template $template)
   {
+    $this->template = $template;
   }
 
   static public function getSubscribedEvents()

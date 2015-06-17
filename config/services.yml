@@ -1,5 +1,7 @@
 services:
     iiet.hide_forums.listener:
         class: iiet\hide_forums\event\listener
+        arguments:
+            - @template
         tags:
             - { name: event.listener }
