@@ -9,7 +9,7 @@ var hideForums = function() {
 
   for(var i = 0; i < els.length; i++ ) {
     var f = function(el) {
-      var nr = re.exec(el.querySelector('dl > dt > a').getAttribute('href'))[0];
+      var nr = re.exec(el.querySelector('dl > dt > div > a').getAttribute('href'))[0];
       var tabelka = el.parentNode.parentNode.querySelector('.forums');
   
       if(localStorage.getItem('f'+nr) == 1) {
