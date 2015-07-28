@@ -4,7 +4,7 @@ var hideForums = function() {
   if(hideForums_done == 1) return;
   hideForums_done = 1;
   var re = /(\d+)/;
-  var h3 = document.querySelector('#page-body h3');
+  var online = document.querySelector('.online-list');
   var els = document.querySelectorAll('#page-body div.forabg div.inner ul.topiclist li.header');
 
   for(var i = 0; i < els.length; i++ ) {
@@ -16,7 +16,7 @@ var hideForums = function() {
         var tmp = tabelka.parentNode.parentNode;
         var parent = tmp.parentNode;
         parent.removeChild(tmp);
-        parent.insertBefore(tmp,h3);    
+        parent.insertBefore(tmp,online);    
         tabelka.style.display = 'none';
       }
       el.addEventListener('click', function(ev) {
